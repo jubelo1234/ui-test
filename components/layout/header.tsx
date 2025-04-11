@@ -112,10 +112,9 @@ function Header() {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="fixed top-0 z-50 w-full"
     >
-      {/* For now i want the header to always have a solid bg */}
       <div
         className={`relative z-50 w-full  ${
-          showBg || menuOpen ? "bg-text-dark" : "bg-text-dark"
+          showBg || menuOpen ? "bg-text-dark" : "bg-text-dark md:bg-transparent"
         } py-2.5 tablet:py-4`}
       >
         <div className="mx-auto flex w-[92vw] md:w-[93vw] max-w-web-max items-center justify-between">

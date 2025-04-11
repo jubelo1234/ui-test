@@ -5,12 +5,14 @@ import Services from "@/app/sections/services";
 import BlogGrid from "./sections/blogGrid";
 import SubscribeSection from "./sections/subscribeSection";
 import HeroText from "./sections/heroText";
+import GoldenRatio from "./sections/goldenRatio";
 
 export default function Home() {
   return (
     <>
-      <section className="w-screen h-[500px] md:h-[542px] laptop:!h-[101vh] laptop:max-h-[742px] laptop:min-h-[500px] flex items-center bg-text-dark pt-[66.4px] tablet:pt-[78.4px]">
-        <div className="w-[92vw] md:w-[93vw] max-w-web-max mx-auto">
+      <section className="w-screen h-[500px] md:h-[542px] laptop:!h-[101vh] laptop:max-h-[742px] laptop:min-h-[500px] relative flex items-center bg-text-dark pt-[66.4px] tablet:pt-[78.4px]">
+        <GoldenRatio />
+        <div className="w-[92vw] md:w-[93vw] relative z-[6] max-w-web-max mx-auto">
           <HeroText />
         </div>
       </section>
