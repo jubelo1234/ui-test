@@ -3,19 +3,19 @@ import React from "react";
 import { useId } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-// import graphic from "@/assets/images/subbg.png";
-// import Image from "next/image";
+import graphic from "@/assets/images/subbg.png";
+import Image from "next/image";
 
 export default function SubscribeSection() {
   const id = useId();
   return (
-    <div className="w-full bg-text-dark py-9 tablet:py-[70px] lg:py-[90px]">
-      <div className="relative w-[92vw] md:w-[93vw]  max-w-web-max mx-auto">
-        {/* <Image
+    <div className="w-full bg-text-dark py-9 tablet:py-[70px] lg:py-[90px] laptop:!py-[121px]">
+      <div className="relative w-[92vw] md:w-[93vw]  max-w-web-max mx-auto laptop:pl-[160px]">
+        <Image
           src={graphic}
           alt="graphic"
-          className="h-[585px] z-0  w-fit absolute top-1/2 left-0 -translate-y-1/2"
-        /> */}
+          className="h-[390px] hidden laptop:inline-block z-0  w-fit absolute top-1/2 left-0 -translate-y-1/2"
+        />
         <div className="w-full max-w-[601px] mx-auto text-white">
           <h2 className="font-chronicle font-bold text-2xl md:text-[32px] leading-tight tracking-wide">
             Subscribe to Cordros Insights
